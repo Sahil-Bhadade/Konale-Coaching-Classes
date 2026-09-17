@@ -1,0 +1,184 @@
+	<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Get in touch with Konale Coaching Classes — enrol or ask a question.">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600;1,700&display=swap" rel="stylesheet">
+
+	<title>Contact — Konale Coaching Classes</title>
+</head>
+	<body>
+
+		<header>
+		    <nav class="header">
+			    <div class="logo">
+			        <a href="index.html"><img src="img/KCC-logo.png" class="kcc-logo" alt="Konale Coaching Classes logo"></a>
+			    </div>
+
+			    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+			        <span></span><span></span><span></span>
+			    </button>
+
+			    <div class="nav-links" id="navLinks">
+			      <a href="index.html">Home</a>
+				      <a href="results.html">Results</a>
+				      <a href="faculty.html">Faculty</a>
+				      <a href="contact.html" class="active">Contact</a>
+				      <a href="contact.html" class="enroll-btn">Enroll Now</a>
+			    </div>
+			</nav>
+			<div class="nav-overlay" id="navOverlay"></div>
+		</header>
+
+		<main>
+			<section class="page-hero">
+				<div class="breadcrumb"><a href="index.html">Home</a> &nbsp;/&nbsp; Contact</div>
+				<h1>Get In Touch</h1>
+				<p>Have a question, or ready to enrol? Fill the form below and our team will call you back.</p>
+			</section>
+
+			<section class="page-content">
+				<div class="contact-layout">
+
+					<div class="contact-info-card">
+						<h3>Contact Details</h3>
+
+						<div class="contact-info-item">
+							<span class="ci-icon">&#128222;</span>
+							<div>
+								<div class="ci-label">Phone</div>
+								<div class="ci-value">+91 00000 00000</div>
+							</div>
+						</div>
+
+						<div class="contact-info-item">
+							<span class="ci-icon">&#9993;</span>
+							<div>
+								<div class="ci-label">Email</div>
+								<div class="ci-value">info@konalecoaching.example</div>
+							</div>
+						</div>
+
+						<div class="contact-info-item">
+							<span class="ci-icon">&#128205;</span>
+							<div>
+								<div class="ci-label">Address</div>
+								<div class="ci-value">Konale Coaching Classes, Your City</div>
+							</div>
+						</div>
+
+						<div class="contact-info-item">
+							<span class="ci-icon">&#128337;</span>
+							<div>
+								<div class="ci-label">Office Hours</div>
+								<div class="ci-value">Mon – Sat, 9:00 AM – 7:00 PM</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="contact-form-card">
+						<h3>Send an Enquiry</h3>
+
+						<div class="form-success" id="formSuccess"></div>
+
+						<form id="contactForm" novalidate>
+							<div class="form-row">
+								<div class="form-group">
+									<label for="fullName">Full Name</label>
+									<input type="text" id="fullName" name="fullName" placeholder="Your name" autocomplete="name" required>
+								</div>
+								<div class="form-group">
+									<label for="phone">Phone Number</label>
+									<input type="tel" id="phone" name="phone" placeholder="10-digit mobile number" pattern="[0-9]{10}" autocomplete="tel" required>
+								</div>
+							</div>
+
+							<div class="form-row">
+								<div class="form-group">
+									<label for="email">Email</label>
+									<input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" required>
+								</div>
+								<div class="form-group">
+									<label for="courseInterest">Interested Course</label>
+									<select id="courseInterest" name="courseInterest" required>
+										<option value="" disabled selected>Select a course</option>
+										<option value="jee">IIT-JEE</option>
+										<option value="cet">MHT-CET</option>
+										<option value="neet">NEET</option>
+										<option value="foundation">Foundation</option>
+										<option value="other">Other / Not sure yet</option>
+									</select>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="message">Message</label>
+								<textarea id="message" name="message" placeholder="Tell us a little about what you're looking for..."></textarea>
+							</div>
+
+							<p class="form-note">We only use these details to get in touch with you about your enquiry — nothing is shared with anyone else.</p>
+
+							<button type="submit" class="form-submit-btn">Send Enquiry</button>
+						</form>
+					</div>
+
+				</div>
+			</section>
+		</main>
+
+		<footer>
+			<div class="footer">
+				<div class="footer-grid">
+					<div class="footer-brand">
+						<img src="img/KCC-logo.png" class="kcc-logo-footer" alt="Konale Coaching Classes logo">
+						<p>Premier coaching institute for IIT-JEE, NEET, MHT-CET, and Foundation exams.</p>
+						<div class="footer-social">
+							<a href="#" aria-label="Facebook" rel="noopener noreferrer">f</a>
+							<a href="#" aria-label="Instagram" rel="noopener noreferrer">ig</a>
+							<a href="#" aria-label="YouTube" rel="noopener noreferrer">yt</a>
+						</div>
+					</div>
+					<div class="footer-links">
+						<h4>Quick Links</h4>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="results.html">Results</a></li>
+							<li><a href="faculty.html">Faculty</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</div>
+					<div class="footer-links">
+						<h4>Courses</h4>
+						<ul>
+							<li><a href="course.html?course=jee">IIT-JEE</a></li>
+							<li><a href="course.html?course=cet">MHT-CET</a></li>
+							<li><a href="course.html?course=neet">NEET</a></li>
+							<li><a href="course.html?course=foundation">Foundation</a></li>
+						</ul>
+					</div>
+					<div class="footer-contact">
+						<h4>Contact</h4>
+						<ul>
+							<li>+91 00000 00000</li>
+							<li>info@konalecoaching.com</li>
+							<li>Konale Coaching Classes, Nanded</li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer-bottom">
+					<span>© 2026 Konale Coaching Classes. All rights reserved.</span>
+					<span>Built with care for every student's future.</span>
+				</div>
+			</div>
+		</footer>
+
+		<button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+		<script src="js/main.js" defer></script>
+
+	</body>
+</html>

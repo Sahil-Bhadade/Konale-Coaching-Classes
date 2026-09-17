@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Course details — Konale Coaching Classes.">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600;1,700&display=swap" rel="stylesheet">
+
+	<title>Course — Konale Coaching Classes</title>
+</head>
+	<body>
+
+		<header>
+		    <nav class="header">
+			    <div class="logo">
+			        <a href="index.html"><img src="img/KCC-logo.png" class="kcc-logo" alt="Konale Coaching Classes logo"></a>
+			    </div>
+
+			    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+			        <span></span><span></span><span></span>
+			    </button>
+
+			    <div class="nav-links" id="navLinks">
+			      <a href="index.html">Home</a>
+				      <a href="results.html">Results</a>
+				      <a href="faculty.html">Faculty</a>
+				      <a href="contact.html">Contact</a>
+				      <a href="contact.html" class="enroll-btn">Enroll Now</a>
+			    </div>
+			</nav>
+			<div class="nav-overlay" id="navOverlay"></div>
+		</header>
+
+		<main>
+			<section class="page-hero">
+				<div class="breadcrumb"><a href="index.html">Home</a> &nbsp;/&nbsp; Courses &nbsp;/&nbsp; <span id="cd-breadcrumb-title">Course</span></div>
+				<h1>Course Details</h1>
+			</section>
+
+			<section class="page-content">
+
+				<!-- Shown once a valid course is found (course.js fills these in) -->
+				<div class="course-detail-grid" id="courseFound" style="display:none;">
+					<div class="course-detail-main">
+						<span class="course-tag" id="cd-tag">Course</span>
+						<h2 id="cd-title">Course Title</h2>
+						<p class="course-desc" id="cd-description">Loading course details...</p>
+
+						<ul class="course-highlights" id="cd-highlights">
+							<!-- filled in by js/course.js -->
+						</ul>
+					</div>
+
+					<aside class="course-side-card">
+						<img id="cd-icon" src="img/book.png" alt="" style="width:44px;height:44px;border-radius:10px;margin-bottom:16px;">
+						<div class="csc-row"><span>Duration</span><span id="cd-duration">—</span></div>
+						<div class="csc-row"><span>Students</span><span id="cd-students">—</span></div>
+						<div class="csc-row"><span>Batches</span><span id="cd-batch">—</span></div>
+						<a href="contact.html" class="btn-primary">Enroll Now &rarr;</a>
+					</aside>
+				</div>
+
+				<!-- Shown if the link doesn't match a real course -->
+				<div class="course-not-found" id="courseNotFound" style="display:none;">
+					<h2>We couldn't find that course</h2>
+					<p>The course you're looking for may have moved. Try one of these instead:</p>
+					<div class="hero-buttons" style="justify-content:center;">
+						<a href="course.html?course=jee" class="btn-secondary" style="color:#16213e;border-color:#16213e;">IIT-JEE</a>
+						<a href="course.html?course=neet" class="btn-secondary" style="color:#16213e;border-color:#16213e;">NEET</a>
+						<a href="course.html?course=cet" class="btn-secondary" style="color:#16213e;border-color:#16213e;">MHT-CET</a>
+						<a href="course.html?course=foundation" class="btn-secondary" style="color:#16213e;border-color:#16213e;">Foundation</a>
+					</div>
+				</div>
+
+			</section>
+		</main>
+
+		<footer>
+			<div class="footer">
+				<div class="footer-grid">
+					<div class="footer-brand">
+						<img src="img/KCC-logo.png" class="kcc-logo-footer" alt="Konale Coaching Classes logo">
+						<p>Premier coaching institute for IIT-JEE, NEET, MHT-CET, and Foundation exams.</p>
+						<div class="footer-social">
+							<a href="#" aria-label="Facebook" rel="noopener noreferrer">f</a>
+							<a href="#" aria-label="Instagram" rel="noopener noreferrer">ig</a>
+							<a href="#" aria-label="YouTube" rel="noopener noreferrer">yt</a>
+						</div>
+					</div>
+					<div class="footer-links">
+						<h4>Quick Links</h4>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="results.html">Results</a></li>
+							<li><a href="faculty.html">Faculty</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</div>
+					<div class="footer-links">
+						<h4>Courses</h4>
+						<ul>
+							<li><a href="course.html?course=jee">IIT-JEE</a></li>
+							<li><a href="course.html?course=cet">MHT-CET</a></li>
+							<li><a href="course.html?course=neet">NEET</a></li>
+							<li><a href="course.html?course=foundation">Foundation</a></li>
+						</ul>
+					</div>
+					<div class="footer-contact">
+						<h4>Contact</h4>
+						<ul>
+							<li>+91 00000 00000</li>
+							<li>info@konalecoaching.example</li>
+							<li>Konale Coaching Classes, Your City</li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer-bottom">
+					<span>© 2026 Konale Coaching Classes. All rights reserved.</span>
+					<span>Built with care for every student's future.</span>
+				</div>
+			</div>
+		</footer>
+
+		<button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+		<script src="js/course-data.js" defer></script>
+		<script src="js/course.js" defer></script>
+		<script src="js/main.js" defer></script>
+
+	</body>
+</html>
